@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="selenium-server">
+    <CLASSES>
+      <root url="jar://C:/server/selenium-server.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
