@@ -5,7 +5,9 @@ import org.junit.*;
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.Select;
 ///
 public class Yaware3Test {
@@ -16,10 +18,20 @@ public class Yaware3Test {
 
     @Before
     public void setUp() throws Exception {
-        System.setProperty("webdriver.gecko.driver", "C:\\server\\geckodriver.exe");
-        driver = new FirefoxDriver();
+        //Firefox
+       // System.setProperty("webdriver.gecko.driver", "C:\server\geckodriver.exe");
+        //  driver = new FirefoxDriver();
+        //Chrome
+       System.setProperty("webdriver.chrome.driver", "C:\\server\\chromedriver.exe");
+       driver = new ChromeDriver();
+
+        //Opera
+      //  System.setProperty("webdriver.opera.driver", "C:\\server\\operadriver.exe");
+     //  driver = new OperaDriver();
+
         baseUrl = "http://app.yaware.com/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
     }
 
     @Test
