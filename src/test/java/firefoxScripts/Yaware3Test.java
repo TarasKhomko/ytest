@@ -19,11 +19,11 @@ public class Yaware3Test {
     @Before
     public void setUp() throws Exception {
         //Firefox
-       // System.setProperty("webdriver.gecko.driver", "C:\server\geckodriver.exe");
-        //  driver = new FirefoxDriver();
+        System.setProperty("webdriver.gecko.driver", "C:\\server\\geckodriver.exe");
+          driver = new FirefoxDriver();
         //Chrome
-       System.setProperty("webdriver.chrome.driver", "C:\\server\\chromedriver.exe");
-       driver = new ChromeDriver();
+      // System.setProperty("webdriver.chrome.driver", "C:\\server\\chromedriver.exe");
+       //driver = new ChromeDriver();
 
         //Opera
       //  System.setProperty("webdriver.opera.driver", "C:\\server\\operadriver.exe");
